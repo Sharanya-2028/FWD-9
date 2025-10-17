@@ -1,0 +1,146 @@
+.box{
+
+
+
+/* background-color: gray; */
+width:100%;
+height:60%;
+
+
+}
+
+nav {
+    display: flex;           /* makes it a flex container */
+    justify-content: center; /* centers horizontally */
+    align-items: center;     /* centers vertically */
+    box-sizing: border-box;
+    padding: 1rem;
+    margin: 1rem 0;
+    border-radius: 7px;
+    width: 100%;
+    height: 70px; /* fixed height for nav */
+    /* background-color: hsla(28, 48%, 83%, 0.45); */
+    background-color:#c0c497bb ;
+}
+
+nav a {
+    padding: 0.5rem 2rem; /* vertical 0.5rem, horizontal 2rem for wide spacing */
+    margin: 0 1rem;       /* horizontal gap between links */
+    font-size: 20px;
+    color: #3B2F2F;
+    text-decoration: none;
+    text-shadow: 1px 1px 3px #8B7F73;
+    font-family: 'Nunito', sans-serif;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #A68A64; /* coffee glow on hover */
+}
+
+body{
+
+
+/* background-color:#fcf3dccf; */
+background-color:#dcd7d59f;
+
+
+padding :1rem;
+margin:3rem;
+
+}
+nav a {
+    /* word-spacing:1rem; */
+    font-family: 'Nunito', sans-serif;
+}
+
+.box-content {
+  display: flex;              /* makes children (text + image) sit side by side */
+  justify-content: space-between;  /* adds space between them */
+  align-items: center;        /* vertically centers them */
+  gap: 20px;                  /* optional: adds space between text and image */
+  padding: 20px;              /* optional: adds breathing space */
+}
+
+/* Make sure the text section doesn’t stretch too wide */
+.details {
+  flex: 1;                    /* makes text take remaining space */
+}
+
+/* Control image size */
+.imgsection img {
+  width: 400px;               /* adjust as needed */
+  height: auto;
+  border-radius: 10px;        /* optional: smooth corners */
+  box-shadow: 1px 1px 16px #3B2F2F;
+}
+
+.box-content{
+display: flex;
+    flex-wrap: wrap;   /* allows children to move below if screen is too small */
+    gap: 3rem;         /* space between .detail and .imgsection */
+    margin: 3rem;
+    padding: 2rem;
+    height: 60%;  /*    let height adjust automatically */
+    box-sizing: border-box;
+
+
+
+/* background-color:#3B2F2F; */
+
+
+}
+
+
+
+.details{
+
+width:45%;
+
+margin:2rem;
+/* background-color:; */
+
+/* background-color :#bdceb7c5; */
+
+background-color:#c9bfaaec;
+
+border-radius:15px;
+padding:1.1rem;
+box-shadow: 1px 1px 15px #6D7C5F;
+
+
+
+}
+.quote-section {
+  text-align: center;
+ font-family: "Dancing Script", cursive;
+ color:  #754603fe;
+/* text-shadow: */
+ word-spacing:0.39rem;
+position :relative;
+left:20px;
+ font-size:1.25rem;
+/* font-weight:bold; */
+
+text-shadow: 0px 1px 9px #674d05f5;
+/* background-color: #C5C0B8; */
+
+}
+
+.details > p {
+    word-spacing: 0.7rem;
+    letter-spacing: 0.09rem;
+    line-height: 1.47rem; 
+    text-align: center;
+    margin:1rem;
+  /* padding :0.6rem;    */
+
+font-size:1.09rem;
+font-family:quicksand;
+/* font-weight:bold; */
+color: #311d02;
+text-shadow: 0.5px 0px 0.98px rgb(68, 33, 2);
+
+
+
+}
