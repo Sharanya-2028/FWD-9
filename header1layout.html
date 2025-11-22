@@ -2,12 +2,28 @@
 
 <head>
 <title>Book Store</title>
+<link href="logo.css" rel="stylesheet">
+<link href="photo_test.css" rel="stylesheet">
+<link href="header2layout.css" rel="stylesheet">
+<link href="photo_hover.css" rel="stylesheet">
 <link href="header1layout.css" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lora&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;600&display=swap" rel="stylesheet">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Quicksand:wght@300..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Fredoka:wght@300..700&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Quicksand:wght@300..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -23,11 +39,11 @@ and also a link for register and another for explore -->
     
             <a href="#home">Home</a>
 
-           <a href="#mylib">My Library</a>
+           <a href="mylib.html">My Library</a>
 
-          <a href="explore">Explore</a>
+          <a href="explore.html">Explore</a>
           
-          <a href="register">Register</a>
+          <a href="register.html">Register</a>
 
 
 <!-- <a href=""><div class="Acc-section">User</div></a> -->
@@ -38,7 +54,7 @@ and also a link for register and another for explore -->
     </nav>
 </header>
 
-<div class ="box-content">
+<div class ="box-content" id="home">
     <div class="details">
     <div class="quote-section">
 
@@ -72,19 +88,46 @@ and also a link for register and another for explore -->
 
 
 
-</body>
+<div class="top_featured">
+  <h2>Top Featured</h2>
 
+  <div class="books">
+<a href="Silent_Patient.pdf" class="book-link" target="_blank">    <div class="book" onclick="showBooks('book')">
+        <img src="Silent_patient.jpg" class="book_photo">
+        <div class="overlay">
+      <h3 class="hover_text">Top Book of the Year</h3>
+      <p class="hover_text">The Silent Patient </p>
+      </div>
+    </div>
+    </a>
 
+    <a href="https://www.alexmichaelides.com/" target="_blank" class="book-link">
+    <div class="book" onclick="showBooks('author')">
+                <img src="author_photo.jpg" class ="book_photo">
+<div class="overlay">
+      <h3 class="hover_text">Top Author</h3>
+      <p class="hover_text">Alex Michaelides </p>
+      </div>
+    </div>
 
+    </a>
+    <a href="https://en.wikipedia.org/wiki/Mystery_fiction" target="_blank" class="book-link">
+    <div class="book" onclick="showBooks('genre')">
+                <img src="genre_photo.jpg" class ="book_photo">
+<div class="overlay">
+      <h3 class="hover_text">Top Genre</h3>
+      <p class="hover_text" >Mystery & Thriller </p>
+      </div>
+    </div>
+    </a>
+  </div>
 
-
-
-
-
-
-
-
-
+  <!-- hidden section that appears when clicked -->
+  <div id="bookDetails" class="book-details">
+    <h3>Books by Category</h3>
+    <ul id="bookList"></ul>
+  </div>
+</div>
 
 
 

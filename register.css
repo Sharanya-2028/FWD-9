@@ -1,0 +1,100 @@
+body {
+    margin: 0;
+    background: #EFE6DA; /* warm beige */
+    font-family: "Lora", serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Register Box */
+.container {
+    background: #F7F3EB; /* soft cream */
+    padding: 35px 30px;
+    width: 360px;
+    border-radius: 14px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+    text-align: center;
+    border: 1px solid #E2D7C9;
+}
+
+/* Title */
+h2 {
+    font-family: "Cinzel Decorative", serif;  /* matches your Explore theme */
+    color: #3A2F2A; /* deep autumn brown */
+    font-size: 2rem;
+    letter-spacing: 1px;
+    margin-bottom: 22px;
+
+    text-shadow: 2px 2px 4px rgba(90, 60, 40, 0.25);
+}
+
+/* Labels */
+label {
+    float: left;
+    font-size: 15px;
+    color: #4A3F35;
+    margin-bottom: 6px;
+    font-weight: 600;
+    font-family: "Nunito", sans-serif;
+}
+
+/* Input Fields */
+input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+
+    background: #EFE6DA;
+    border: 1px solid #C9BBAA;
+    border-radius: 6px;
+
+    font-size: 15px;
+    font-family: "Quicksand", sans-serif;
+
+    transition: 0.3s ease;
+}
+
+input:focus {
+    outline: none;
+    border-color: #D97A3A; /* warm pumpkin orange */
+    box-shadow: 0 0 6px rgba(217, 122, 58, 0.4);
+}
+
+/* Button */
+button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    background: #355E3B; /* forest green */
+    color: white;
+    font-size: 17px;
+    font-family: "Nunito", sans-serif;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+button:hover {
+    background: #4F7F55; /* soft olive green */
+    transform: translateY(-2px);
+}
+
+/* Bottom text */
+.login-text {
+    margin-top: 18px;
+    font-size: 14px;
+    font-family: "Quicksand", sans-serif;
+    color: #3A2F2A;
+}
+
+.login-text a {
+    color: #D97A3A; /* pumpkin orange */
+    text-decoration: none;
+    font-weight: 600;
+}
+
+@login-text a:hover {
+    text-decoration: underline;
+}

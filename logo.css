@@ -1,0 +1,21 @@
+/* Header logo for Brewed Words */
+.logo {
+    display: flex;                /* to align icon + text nicely */
+padding:1.2rem;
+
+    align-content: center;
+    gap: 0.5rem;                  /* space between icon and text */
+    font-family: 'Playfair Display', serif;
+    font-size: 1.8rem;            /* prominent but fits header */
+    font-weight: 700;
+    color:	#3b2903f3;               /* warm autumn-orange */
+    text-shadow: -1px -1px 6px #4f4e03df;  /* soft street-light shadow */
+}
+
+/* Optional small “icon” to add the cozy vibe */
+.logo::after {
+    content: "☕";                 /* coffee mug icon for cozy vibe */
+    font-size: 1.5rem;
+    color: #FFB75D;               /* warm glow color */
+    text-shadow: 0 0 4px #FFD8A6;
+}

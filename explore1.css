@@ -1,0 +1,97 @@
+.explore-books {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  padding: 30px;
+}
+
+
+
+body{
+
+
+/* background-color:#fcf3dccf; */
+background-color:#dcd7d59f;
+
+
+padding :1rem;
+margin:3rem;
+
+}
+.title {
+    font-family: "Cinzel Decorative", serif;
+    font-size: 2.4rem;
+    color: rgba(1, 14, 20, 0.88);
+
+    /* Elegant spacing for a premium book feel */
+    letter-spacing: 1.4px;
+
+    /* Soft shadow for depth without looking dramatic */
+    text-shadow: 
+        0px 2px 4px rgba(0, 0, 0, 0.22),
+        0px 1px 1px rgba(255, 255, 255, 0.15);
+}
+.explore-section {
+    width: 100%;
+    padding: 40px 0;
+}
+
+.books-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.book-card {
+    width: 260px;
+    background: #f7f4ec;
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.book-card:hover {
+    transform: scale(1.05);
+}
+
+.book-card img {
+    width: 100%;
+    height: 320px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.book-title {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 1.3rem;
+    margin: 12px 0 6px;
+    color: #302d02;
+    text-shadow:0px 1px 2px #473202ee;
+}
+
+.book-author {
+    font-size: 0.9rem;
+    font-family:quicksand;
+    
+    color: #3b2001;
+    margin-bottom: 12px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 8px 14px;
+    background: #cbbfa3;
+    color: #3a2618;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+.btn:hover {
+    background: #b3a78d;
+}
